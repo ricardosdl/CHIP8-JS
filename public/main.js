@@ -37,7 +37,7 @@ function initEmulator() {
 
     chip8.loadRomFromArray(romSoccer);
 
-    setInterval(updateDrawEmulator, 60);
+    setInterval(updateDrawEmulator, 16);
 
 }
 
