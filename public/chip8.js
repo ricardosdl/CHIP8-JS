@@ -25,6 +25,10 @@ let funcMap = {
     0x00e0 : _0ZZ0,
     0x00ee : _0ZZE,
     0x1000 : _1ZZZ,
+    0x2000 : _2ZZZ,
+    0x3000 : _3ZZZ,
+    0x4000 : _4ZZZ,
+    0x5000 : _5ZZZ,
     0x6000 : _6ZZZ,
     0x7000 : _7ZZZ,
     0x8000 : _8ZZZ,
@@ -140,7 +144,12 @@ function _1ZZZ() {
 }
 
 function _2ZZZ() {
-    
+    //log("Calls subroutine at NNN.")
+    logMessage("Calls subroutine at NNN.");
+    //self.stack.append(self.pc)
+    stack.push(pc);
+    //self.pc = self.opcode & 0x0fff
+    pc = opCode & 0xfff;
 }
 
 function _3ZZZ() {
