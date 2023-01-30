@@ -1,6 +1,7 @@
 //import { SCREEN_WIDTH, SCREEN_HEIGHT, DISPLAY_BUFFER } from "./chip8.js";
 import * as chip8 from "./chip8.js";
-import { romArray as romSoccer } from "./Soccer.js";
+//import { romArray  } from "./Soccer.js";
+import { romArray  } from "./Brick.js";
 
 const CANVAS_WIDTH = chip8.SCREEN_WIDTH * 10;
 const CANVAS_HEIGHT = chip8.SCREEN_HEIGHT * 10;
@@ -35,7 +36,7 @@ function initEmulator() {
     
     chip8.initialize();
 
-    chip8.loadRomFromArray(romSoccer);
+    chip8.loadRomFromArray(romArray);
 
     setInterval(updateDrawEmulator, 16);
 
